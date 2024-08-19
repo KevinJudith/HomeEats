@@ -11,6 +11,12 @@ body {
     margin: auto;
     max-width: 1200px;
 }
+.cta {
+    background-color: red;
+    opacity: 0.9; 
+    color: white;
+    /* Fallback color */
+}
 .navigation {
     margin-top:5px;   
 }
@@ -54,18 +60,20 @@ header nav ul li a {
 }
 .offer-menu-button {
     /* background-color: #008080; */
-    background-color: black;
-    color: #fff;
+    background-color: white;
+    color: brown;
     padding: 10px 20px;
     border-radius: 5px;
+    border: 2px solid brown
 }
 
 
 .hero {
-    background-color: red;
+    background-color: red; /* Fallback color */
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 90px 20px;
+    opacity: 0.9;
 }
 
 .hero .content-wrapper {
@@ -225,8 +233,21 @@ footer ul li a {
 .social-link i.fa {
     font-size: 20px;
 }
+.store-icon {
+    width: 170px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust spacing between icons */
+}
 
-@media (max-width:768px) {
+.app-store-link {
+    display: inline-block;
+    margin-top: 20px; /* Adjust spacing from text */
+}
+.app-store-links-mobile {
+    display: none;
+}
+
+@media (max-width:900px) {
     #menu, #app-preview {
         display: none !important; /* Hide menu on smaller screens */
     }
@@ -240,7 +261,7 @@ footer ul li a {
         font-size: 16px;
     }
     .hero {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
     .cta-button,
     .secondary-button {
@@ -281,7 +302,27 @@ footer ul li a {
         display: block;
         margin: 0 auto; 
     }
+    .app-store-links-mobile {
+        display: block;
+        border-bottom:2px;
 
+    }
+    #app-store-links-mobile {
+        text-align: center;
+        background-color: red;
+    }
+
+    .store-icon {
+        width: 120px; /* Adjust size as needed */
+        margin-right: 20px; /* Adjust spacing between icons */
+    }
+    .store-icon-screen {
+        display: none;
+    }
+    .cta, .features,.how-it-works {
+        display: none;
+    }
+    
 }
 
 
