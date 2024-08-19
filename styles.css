@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+}
+.navigation {
+    margin-top:5px;   
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    overflow: auto; /* Ensures proper clearing of floats */
+}
+
+header .logo {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    float: left; /* Float the logo to the left */
+}
+
+header nav {
+    float: right; /* Float the nav to the right */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block; /* Display list items inline */
+    margin-left: 20px;
+}
+
+header nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first list item */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.offer-menu-button {
+    /* background-color: #008080; */
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.hero {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero .text-content {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    padding-right: 20px; /* Adjust spacing between text and image */
+}
+
+.hero .image-content {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .app-preview {
+    max-width: 60%; /* Adjust the width of the image as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.cta-button {
+    background-color: #fff;
+    color: red;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #f8f8f8;
+}
+
+.features, .how-it-works, .testimonials, .cta {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2, .how-it-works h2, .testimonials h2, .cta h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-cards, .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card, .step, .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.card h3, .step h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.secondary-button {
+    background-color: #fff;
+    color: red;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 2px solid red;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.secondary-button:hover {
+    background-color: #f8f8f8;
+}
+.image-mobile {
+    display: none;
+}
+
+@media (max-width:768px) {
+    #menu, #app-preview {
+        display: none !important; /* Hide menu on smaller screens */
+    }
+    #logo {
+        margin-left: 20px;
+    }
+    #hero-title {
+        font-size: 24px;
+    }
+    #hero-description {
+        font-size: 16px;
+    }
+    .hero {
+        padding: 40px 20px;
+    }
+    .cta-button,
+    .secondary-button {
+        width:48%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        display: inline-block; /* Ensure buttons are block-level elements */
+        margin-top: 10px; /* Add some vertical spacing between buttons */
+        font-size: 13px;
+    }
+    
+    .content-wrapper{
+        display: block !important;
+    }
+    /* Ensure the container for buttons doesn't have conflicting styles */
+    .hero .text-content {
+        max-width: 100%; /* Allow full width on mobile */
+        padding-right: 0; /* Remove right padding on mobile */
+    }
+    .card, .step {
+        width:100%;
+    }
+    #how-it-works, #features {
+        padding:30px 20px !important;
+    }
+    .features h2, .how-it-works h2, .cta h2 {
+        font-size:30px !important;
+    }
+    .image-mobile {
+        display: block;
+        background-color: red;
+        padding-bottom: 30px;
+    }
+    #app-preview-mobile {
+        max-width: 50%; /* Adjust the width of the image as needed */
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
+
+}
+
+
+
+
