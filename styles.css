@@ -188,6 +188,43 @@ footer ul li a {
 .image-mobile {
     display: none;
 }
+.social-media {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    font-size: 28px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social-link:hover {
+    background-color: #555;
+}
+
+/* Adjust styles for specific social media icons (e.g., font awesome) */
+.social-link i.fa {
+    font-size: 20px;
+}
 
 @media (max-width:768px) {
     #menu, #app-preview {
