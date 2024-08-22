@@ -2,7 +2,7 @@
 ![HomeEats](./images/image.png)
 
 # HomeEats
-Simple static landing page using HTML and CSS and deployed using vercel
+Simple mobile responsive landing page using HTML and CSS and deployed using vercel
 
 ## Overview
 Here's an overview of the components we'll need:
