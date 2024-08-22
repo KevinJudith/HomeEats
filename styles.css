@@ -28,11 +28,13 @@ header {
     overflow: auto; /* Ensures proper clearing of floats */
 }
 
-header .logo {
+#logo {
     font-size: 24px;
-    color: red;
+    color: red !important;
     font-weight: bold;
     float: left; /* Float the logo to the left */
+    text-decoration: none !important;
+
 }
 
 header nav {
